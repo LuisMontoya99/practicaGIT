@@ -1,0 +1,587 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background: radial-gradient(farthest-side circle at 525px -66px,  #2e2f32 0px, #1A1C21);
+  position: relative;
+  font-family: arial;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+}
+
+.company-name {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  margin-left: 50px;
+}
+
+nav {
+  margin-right: 80px;
+}
+
+.projects {
+  margin-right: 80px;
+}
+
+.media-list {
+  position: absolute;
+  list-style-type: none;
+  bottom: 15px;
+  left: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.media-list li {
+  margin-bottom: 15px;
+}
+
+.media-list img {
+  width: 15px;
+  height: 15px;
+}
+
+.scroll {
+  position: absolute;
+  color: white;
+  align-items: center;
+  display: inline-block;
+  bottom: 77px;
+  right: 66px;
+  margin: 0;
+  padding: 0;
+  transform: rotate(90deg);
+}
+
+.scroll p {
+  margin: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.scroll p::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  top: 0.5em;
+  right: -30px;
+}
+
+.main-text {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.i-am {
+  margin-left: 102px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.tura {
+  text-align: center;
+  font-size: 150px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.a-junior-web-developer {
+  margin-left: 212px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main-contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-contact h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.div-contact-info {
+  text-align: center;
+  margin-right: 5%;
+  padding-top: 30px;
+  width: 50%;
+}
+
+.div-contact-info h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+}
+
+.text-contact {
+  margin-bottom: 50px;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 35px;
+}
+
+.div-contact-info h2 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.div-contact-info p::first-letter {
+  text-transform: capitalize;
+}
+
+.div-contact-info div {
+  margin-bottom: 35px;
+}
+
+.survey {
+  position: relative;
+  text-align: center;
+  margin-left: 5%;
+  padding-top: 30px;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: -4px 4px 13px 2px #0000006e;
+}
+
+.survey h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+}
+
+.form-contact {
+  margin-top: -50px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.div-your-name {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.div-your-name input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #fff;
+  border: none;
+  outline: 0px;
+  padding-top: 25px;
+}
+
+.div-your-name .label-your-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.div-your-name .label-your-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2ecece;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.text-your-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.div-your-name input:focus + .label-your-name .text-your-name,
+.div-your-name input:valid + .label-your-name .text-your-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2ecece;
+}
+
+.div-your-name input:focus + .label-your-name::after,
+.div-your-name input:valid + .label-your-name::after {
+  transform: translateX(0%);
+}
+
+.div-your-phone {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.div-your-phone input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #fff;
+  border: none;
+  outline: 0px;
+  padding-top: 25px;
+}
+
+.div-your-phone .label-your-phone {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.div-your-phone .label-your-phone::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2ecece;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.text-your-phone {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.div-your-phone input:focus + .label-your-phone .text-your-phone,
+.div-your-phone input:valid + .label-your-phone .text-your-phone {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2ecece;
+}
+
+.div-your-phone input:focus + .label-your-phone::after,
+.div-your-phone input:valid + .label-your-phone::after {
+  transform: translateX(0%);
+}
+
+.div-your-e-mail {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.div-your-e-mail input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #fff;
+  border: none;
+  outline: 0px;
+  padding-top: 25px;
+}
+
+.div-your-e-mail .label-your-e-mail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.div-your-e-mail .label-your-e-mail::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2ecece;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.text-your-e-mail {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.div-your-e-mail input:focus + .label-your-e-mail .text-your-e-mail,
+.div-your-e-mail input:valid + .label-your-e-mail .text-your-e-mail {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2ecece;
+}
+
+.div-your-e-mail input:focus + .label-your-e-mail::after,
+.div-your-e-mail input:valid + .label-your-e-mail::after {
+  transform: translateX(0%);
+}
+
+.div-message {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.div-message input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #fff;
+  border: none;
+  outline: 0px;
+  padding-top: 25px;
+}
+
+.div-message .label-message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.div-message .label-message::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2ecece;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.text-message {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.div-message input:focus + .label-message .text-message,
+.div-message input:valid + .label-message .text-message {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2ecece;
+}
+
+.div-message input:focus + .label-message::after,
+.div-message input:valid + .label-message::after {
+  transform: translateX(0%);
+}
+
+.button-send-message {
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border-radius: 8px;
+  border-width: 0px;
+  margin-top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8%;
+  margin-top: 0px;
+  box-shadow: 7px 8px 20px -3px #000000ab;
+}
+
+.button-send-message:hover {
+  cursor: pointer;
+}
+
+.main-projects {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76vw;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.swiper {
+  width: 100%;
+  padding-bottom: 240px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 450px;
+  height: 600px;
+  filter: blur(3px);
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide h2 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 68px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.swiper-slide p::first-letter {
+  text-transform: capitalize;
+}
+
+.swiper-slide p {
+  color: #C5C4C4;
+  text-align: center;
+  font-size: 10px;
+}
+
+.swiper-slide button:hover {
+  cursor: pointer;
+}
+
+.carousel-title {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  margin-top: -85px;
+  width: 100%;
+  text-align: center;
+  transform: scale(1.2);
+}
+
+.carousel-text {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s;
+  margin-top: 43px;
+  width: 100%;
+  text-align: center;
+  transform: scale(2);
+  line-height: 20px;
+}
+
+.button-project {
+  position: absolute;
+  text-align: center;
+  padding: 25px 10px;
+  width: 75%;
+  font-family: Arial;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: #1A1C21;
+  border-width: 0px;
+  margin-top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35%;
+  opacity: 0;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 10px -3px #000000d9;
+}
+
+.swiper-slide-active .carousel-title {
+  opacity: 1;
+}
+
+.swiper-slide-active .carousel-text {
+  opacity: 1;
+}
+
+.swiper-slide-active .button-project {
+  opacity: 1;
+}
